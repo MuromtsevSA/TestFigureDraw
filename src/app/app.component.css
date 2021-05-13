@@ -1,0 +1,29 @@
+.canva {
+  background: white;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.coords {
+  display: inline;
+  width: 450px;
+  margin: fill;
+}
+input {
+  flex-direction: column;
+  display: inline;
+  margin-top: 5px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
+button {
+  flex-direction: column;
+  display: inline-flex;
+  background: brown;
+  margin-right: 50px;
+  margin-top: 20px;
+  width: 120px;
+  height: 50px;
+}

@@ -1,0 +1,61 @@
+<div class="wrapper">
+  <canvas  class="canva" width="400" height="400" #canvas></canvas>
+  <hr/>
+  <input [(ngModel)]="name" type="text"  placeholder="название фигуры"/>
+</div>
+  <div *ngIf="name == 'line'" class="coords">
+    <input [(ngModel)]="x" type="number"  placeholder="координата x"/>
+    <input [(ngModel)]="y" type="number" placeholder="координата y"/>
+    <input [(ngModel)]="w" type="number" placeholder="x"/>
+    <input [(ngModel)]="h" type="number" placeholder="y"/>
+    <input [(ngModel)]="colors" type="text" placeholder="цвет фона"/>
+    <input [(ngModel)]="colorLine" type="text" placeholder="цвет линии"/>
+    <button (click)="add(name, x,y, w, h, b, m)">Добавить</button>
+    <button (click)="getColorBackground(colors)">Покрасить фон</button>
+    <button (click)="getLineColor(colorLine)">Покрасить линию</button>
+  </div>
+  <div *ngIf="name == 'rectangle'" class="coords">
+    <input [(ngModel)]="x" type="number"  placeholder="координата x"/>
+    <input [(ngModel)]="y" type="number" placeholder="координата y"/>
+    <input [(ngModel)]="w" type="number" placeholder="x"/>
+    <input [(ngModel)]="h" type="number" placeholder="y"/>
+    <input [(ngModel)]="colors" type="text" placeholder="цвет фона"/>
+    <input [(ngModel)]="colorFigure" type="text" placeholder="цвет фигуры"/>
+    <button (click)="add(name, x,y, w, h, b, m)">Добавить</button>
+    <button (click)="getColorBackground(colors)">Покрасить фон</button>
+    <button (click)="getColorFigure(colorFigure)">Покрасить фигуру</button>
+  </div>
+<div *ngIf="name == 'triangle'" class="coords">
+  <input [(ngModel)]="x" type="number"  placeholder="координата x"/>
+  <input [(ngModel)]="y" type="number" placeholder="координата y"/>
+  <input [(ngModel)]="w" type="number" placeholder="x"/>
+  <input [(ngModel)]="h" type="number" placeholder="y"/>
+  <input [(ngModel)]="b" type="number" placeholder="x"/>
+  <input [(ngModel)]="m" type="number" placeholder="Y"/>
+  <input [(ngModel)]="colors" type="text" placeholder="цвет фона"/>
+  <input [(ngModel)]="colorFigure" type="text" placeholder="цвет фигуры"/>
+  <button (click)="add(name, x,y, w, h, b, m)">Добавить</button>
+  <button (click)="getColorBackground(colors)">Покрасить фон</button>
+  <button (click)="getColorFigure(colorFigure)">Покрасить фигуру</button>
+</div>
+<div *ngIf="name == 'circle'" class="coords">
+  <input [(ngModel)]="x" type="number"  placeholder="координата x"/>
+  <input [(ngModel)]="y" type="number" placeholder="координата y"/>
+  <input [(ngModel)]="w" type="number" placeholder="x"/>
+  <input [(ngModel)]="colors" type="text" placeholder="цвет фона"/>
+  <input [(ngModel)]="colorFigure" type="text" placeholder="цвет фигуры"/>
+  <button (click)="add(name, x,y, w, h, b, m)">Добавить</button>
+  <button (click)="getColorBackground(colors)">Покрасить фон</button>
+  <button (click)="getColorFigure(colorFigure)">Покрасить фигуру</button>
+</div>
+<div *ngIf="name == 'ellipse'" class="coords">
+  <input [(ngModel)]="x" type="number"  placeholder="координата x"/>
+  <input [(ngModel)]="y" type="number" placeholder="координата y"/>
+  <input [(ngModel)]="w" type="number" placeholder="x"/>
+  <input [(ngModel)]="h" type="number" placeholder="y"/>
+  <input [(ngModel)]="colors" type="text" placeholder="цвет фона"/>
+  <input [(ngModel)]="colorFigure" type="text" placeholder="цвет фигуры"/>
+  <button (click)="add(name, x,y, w, h, b, m)">Добавить</button>
+  <button (click)="getColorBackground(colors)">Покрасить фон</button>
+  <button (click)="getColorFigure(colorFigure)">Покрасить фигуру</button>
+</div>
